@@ -57,19 +57,19 @@
 <!-- 🔴 FIM DO VÍDEO -->
 
 <style>
-    /* Ajuste para telas grandes (desktop) */
+    /* Ocultar o vídeo em telas grandes (desktop) */
     #video {
-        max-height: 20vh; /* Limita a altura do vídeo para 20% da altura da tela */
+        display: none;
     }
 
-    /* Ajuste para telas pequenas (celular) */
+    /* Exibir o vídeo apenas em telas pequenas (celular) */
     @media (max-width: 768px) {
         #video {
+            display: block; /* Exibe o vídeo no celular */
             max-height: 100vh; /* Permite que o vídeo ocupe toda a altura da tela no celular */
         }
     }
 </style>
-
 
 </div>
 
