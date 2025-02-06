@@ -114,16 +114,17 @@
 
 <style>
     /* Ajuste para telas grandes (desktop) */
-    #video {
-        max-height: 20vh; /* Limita a altura do vídeo para 20% da altura da tela */
-    }
+ #video {
+    max-height: 20vh; /* Limita a altura do vídeo para 20% da altura da tela */
+    margin-bottom: 30px; /* Adiciona um espaço de 30px entre o vídeo e o rodapé */
+}
 
-    /* Ajuste para telas pequenas (celular) */
-    @media (max-width: 768px) {
-        #video {
-            max-height: 100vh; /* Permite que o vídeo ocupe toda a altura da tela no celular */
-        }
+@media (max-width: 768px) {
+    #video {
+        max-height: 100vh; /* Permite que o vídeo ocupe toda a altura da tela no celular */
+        margin-bottom: 20px; /* Menos espaço para telas pequenas */
     }
+}
 </style>
 
     </main>
