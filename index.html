@@ -105,7 +105,8 @@
                 <li><a href="seguros.html"><i class="fas fa-shield-alt"></i> Seguros</a></li>
             </ul>
         </section>
-     <!-- 🔴 VÍDEO INSERIDO AQUI -->
+        
+ <!-- 🔴 VÍDEO INSERIDO AQUI -->
 <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;" id="video">
     <source src="video.mp4" type="video/mp4">
     Seu navegador não suporta a reprodução de vídeos.
@@ -114,18 +115,22 @@
 
 <style>
     /* Ajuste para telas grandes (desktop) */
- #video {
-    max-height: 20vh; /* Limita a altura do vídeo para 20% da altura da tela */
-    margin-bottom: 30px; /* Adiciona um espaço de 30px entre o vídeo e o rodapé */
-}
-
-@media (max-width: 768px) {
     #video {
-        max-height: 100vh; /* Permite que o vídeo ocupe toda a altura da tela no celular */
-        margin-bottom: 20px; /* Menos espaço para telas pequenas */
+        max-height: 20vh; /* Limita a altura do vídeo para 20% da altura da tela */
+        margin-top: 30px; /* Adiciona um espaço de 30px acima do vídeo */
+        margin-bottom: 30px; /* Adiciona um espaço de 30px entre o vídeo e o rodapé */
     }
-}
+
+    /* Ajuste para telas pequenas (celular) */
+    @media (max-width: 768px) {
+        #video {
+            max-height: 100vh; /* Permite que o vídeo ocupe toda a altura da tela no celular */
+            margin-top: 20px; /* Menos espaço acima do vídeo para telas pequenas */
+            margin-bottom: 20px; /* Menos espaço para telas pequenas */
+        }
+    }
 </style>
+
 
     </main>
 
