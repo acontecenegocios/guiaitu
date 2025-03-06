@@ -33,35 +33,43 @@
     display: flex;
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+    z-index: 9999; /* Garantir que o botão fique acima de outros elementos */
   }
-  
+
   .whatsapp-button img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
   }
 
-  /* Estilo para o cabeçalho */
+  /* Estilo do cabeçalho */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Ajuste conforme necessário */
-    margin: 0; /* Remover margens extras */
+    padding: 10px 20px; /* Ajuste de padding do cabeçalho */
+    margin: 0; /* Remove margens extras */
+    position: relative; /* Para garantir que o botão não interfira */
+    z-index: 10; /* Garante que o cabeçalho tenha um z-index inferior ao botão do WhatsApp */
   }
 
-  /* Estilo do menu */
+  /* Ajuste o menu se houver algum problema de espaçamento */
   nav {
-    margin-top: 0; /* Ajuste o espaço do menu */
-    padding: 0; /* Remova padding indesejado */
+    margin-top: 0;
+    padding: 0;
   }
 
-  /* Ajustar qualquer espaçamento vertical no conteúdo abaixo do cabeçalho */
+  /* Prevenção de layout quebrado, ajustando o conteúdo abaixo do cabeçalho */
   body {
-    padding-top: 80px; /* Ajusta o espaçamento superior para compensar o botão flutuante */
+    padding-top: 70px; /* Ajusta o espaçamento superior para o conteúdo não ficar atrás do cabeçalho */
+  }
+
+  /* Caso o cabeçalho tenha algum problema de altura, ajuste a altura dele */
+  header {
+    min-height: 80px; /* Ajuste de altura do cabeçalho para evitar que fique pequeno */
   }
 </style>
+
 
     <style>
         body {
