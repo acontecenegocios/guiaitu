@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Acontece Negócios">
+    <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
+    
+    <title>Acontece Negócios - Sua empresa em destaque</title>
+
+    <!-- Link para o favicon -->
+    <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
+
+    <!-- Link para o Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6T7330DTT3');
+    </script>
+
+    <!-- Google Ads (Auto Ads) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXX",  <!-- Substitua com seu ID -->
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #f44b4b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header i {
+            font-size: 40px; /* Tamanho do ícone */
+            margin-right: 10px; /* Espaçamento entre o ícone e o título */
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        ul#business-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            list-style-type: none;
+        }
+        ul#business-list li {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        ul#business-list li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        ul#business-list a {
+            color: #0077cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .cookie-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            display: none;
+        }
+        .cookie-bar button {
+            background-color: #f1c40f;
+            border: none;
+            color: black;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        /* Centralizando o título "Categorias em Destaque" */
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Ícone representando o logo ao lado do título -->
+        <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
+        <p>Encontre negócios locais e aumente a visibilidade da sua empresa</p>
+    </header>
+
+   <main>
+        <h2>Selecione um estado</h2>
+        <ul id="city-list">
+            <!-- Lista de estados -->
+            <li><a href="estados/ac.html"><i class="fas fa-map"></i> Acre</a></li>
+            <li><a href="estados/al.html"><i class="fas fa-map"></i> Alagoas</a></li>
+            <li><a href="estados/am.html"><i class="fas fa-map"></i> Amazonas</a></li>
+            <li><a href="estados/ap.html"><i class="fas fa-map"></i> Amapá</a></li>
+            <li><a href="estados/ba.html"><i class="fas fa-map"></i> Bahia</a></li>
+            <li><a href="estados/ce.html"><i class="fas fa-map"></i> Ceará</a></li>
+            <li><a href="estados/df.html"><i class="fas fa-map"></i> Distrito Federal</a></li>
+            <li><a href="estados/es.html"><i class="fas fa-map"></i> Espírito Santo</a></li>
+            <li><a href="estados/go.html"><i class="fas fa-map"></i> Goiás</a></li>
+            <li><a href="estados/ma.html"><i class="fas fa-map"></i> Maranhão</a></li>
+            <li><a href="estados/mg.html"><i class="fas fa-map"></i> Minas Gerais</a></li>
+            <li><a href="estados/ms.html"><i class="fas fa-map"></i> Mato Grosso do Sul</a></li>
+            <li><a href="estados/mt.html"><i class="fas fa-map"></i> Mato Grosso</a></li>
+            <li><a href="estados/pa.html"><i class="fas fa-map"></i> Pará</a></li>
+            <li><a href="estados/pb.html"><i class="fas fa-map"></i> Paraíba</a></li>
+            <li><a href="estados/pe.html"><i class="fas fa-map"></i> Pernambuco</a></li>
+            <li><a href="estados/pi.html"><i class="fas fa-map"></i> Piauí</a></li>
+            <li><a href="estados/pr.html"><i class="fas fa-map"></i> Paraná</a></li>
+            <li><a href="estados/rj.html"><i class="fas fa-map"></i> Rio de Janeiro</a></li>
+            <li><a href="estados/rn.html"><i class="fas fa-map"></i> Rio Grande do Norte</a></li>
+            <li><a href="estados/ro.html"><i class="fas fa-map"></i> Rondônia</a></li>
+            <li><a href="estados/rr.html"><i class="fas fa-map"></i> Roraima</a></li>
+            <li><a href="estados/rs.html"><i class="fas fa-map"></i> Rio Grande do Sul</a></li>
+            <li><a href="estados/sc.html"><i class="fas fa-map"></i> Santa Catarina</a></li>
+            <li><a href="estados/se.html"><i class="fas fa-map"></i> Sergipe</a></li>
+            <li><a href="estados/sp.html"><i class="fas fa-map"></i> São Paulo</a></li>
+            <li><a href="estados/to.html"><i class="fas fa-map"></i> Tocantins</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Acontece Negócios | <a href="contato.html">Contato</a> | <a href="politica-privacidade.html">Política de Privacidade</a> | <a href="termos-uso.html">Termos de Uso | <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a> | <a href="portal-de-noticias.html">Portal de Notícias</a> |</a></p>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-bar" id="cookieBar">
+        Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
+        <a href="politica-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
+        <button onclick="aceitarCookies()">Aceitar</button>
+    </div>
+
+    <script>
+        function aceitarCookies() {
+            document.getElementById('cookieBar').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
