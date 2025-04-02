@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acontece Negócios - Vitrine Comercial</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; }
+        header { background-color: #f44b4b; color: white; padding: 2rem; text-align: center; }
+        h1 { font-size: 2rem; margin: 0; }
+        p.subtitle { font-size: 1.2rem; margin: 0.5rem 0; }
+        .container { max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+        h2 { color: #f44b4b; margin-bottom: 1rem; }
+        p { font-size: 1.1rem; margin: 1rem 0; }
+        .btn { background-color: #25D366; color: white; padding: 1rem; margin: 1rem 0; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; width: 100%; text-align: center; }
+        .btn:hover { background-color: #1da851; }
+        footer { background-color: black; color: white; padding: 1rem; text-align: center; position: fixed; bottom: 0; width: 100%; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-ToyB5jY3dqPPTu5Q1z8UzX6ZG90aD/K2ti3cH/igb7GyO2l6x2VV3Y5+t8+ODAtUMOFycG6MWRlDDtG5kD2dkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1><i class="fa fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
+        <p class="subtitle">Sua vitrine comercial em Salto, Itu, Indaiatuba, Cabreúva e Região</p>
+    </header>
+    <div class="container">
+        <h2>Aumente sua visibilidade agora!</h2>
+        <p>Por apenas <strong>R$ 149,90/ano</strong>, seu comércio estará visível para milhares de pessoas da sua cidade e região. Não perca esta oportunidade de impulsionar suas vendas e atrair novos clientes!</p>
+        <button onclick="window.location.href='https://wa.me/5511991389974'" class="btn">Fale Agora pelo WhatsApp</button>
+    </div>
+    <footer>
+        Portal Acontece Negócios - Saber mais? Clique no botão para falar conosco
+    </footer>
+</body>
+</html>
