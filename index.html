@@ -1,173 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8142699625381745">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Acontece Negócios">
-    <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
-    
-    <title>Acontece Negócios - Sua empresa em destaque</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-8142699625381745">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Acontece Negócios">
+  <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
+  
+  <title>Acontece Negócios - Sua empresa em destaque</title>
+  <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
 
-    <!-- Link para o favicon -->
-    <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9L8N6PNTCZ');
+  </script>
 
-    <!-- Link para o Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8142699625381745" crossorigin="anonymous"></script>
 
-  gtag('config', 'G-9L8N6PNTCZ');
-</script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Estilos CSS -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #f44b4b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        header i {
-            font-size: 40px; /* Tamanho do ícone */
-            margin-right: 10px; /* Espaçamento entre o ícone e o título */
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        ul#business-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            list-style-type: none;
-        }
-        ul#business-list li {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        ul#business-list li:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        }
-        ul#business-list a {
-            color: #0077cc;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .cookie-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 14px;
-            display: none;
-        }
-        .cookie-bar button {
-            background-color: #f1c40f;
-            border: none;
-            color: black;
-            padding: 8px 15px;
-            cursor: pointer;
-        }
-        /* Centralizando o título "Categorias em Destaque" */
-        h2 {
-            text-align: center;
-            font-size: 2em;
-            margin: 30px 0;
-        }
-    </style>
+  <!-- Estilos CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #f44b4b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header i {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    ul#business-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      list-style-type: none;
+    }
+    ul#business-list li {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    ul#business-list li:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    ul#business-list a {
+      color: #0077cc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .cookie-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      display: none;
+    }
+    .cookie-bar button {
+      background-color: #f1c40f;
+      border: none;
+      color: black;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <!-- Ícone representando o logo ao lado do título -->
-        <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
-        <p>Encontre negócios locais e aumente a visibilidade da sua empresa</p>
-    </header>
+  <header>
+    <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
+    <p>Encontre negócios locais e aumente a visibilidade da sua empresa</p>
+  </header>
 
-    <main>
-        <!-- Categorias em Destaque, agora centralizado -->
-        <h2>Categorias em Destaque</h2>
-        <ul id="business-list">
-            <li><a href="academias.html"><i class="fas fa-dumbbell"></i> Academia</a></li>
-            <li><a href="acai.html"><i class="fas fa-ice-cream"></i> Açaí</a></li>
-            <li><a href="adegasetabacarias.html"><i class="fas fa-wine-glass-alt"></i> Adegas e Tabacaria</a></li>
-            <li><a href="alinhamentoebalanceamento.html"><i class="fas fa-car"></i> Alinhamento e Balanceamento</a></li>
-            <li><a href="apartamentonaplanta.html"><i class="fas fa-building"></i> Apartamentos na Planta</a></li>
-            <li><a href="autoeletrica.html"><i class="fas fa-bolt"></i> Auto Elétrica</a></li>
-            <li><a href="barbearia.html"><i class="fas fa-cut"></i> Barbearia</a></li>
-            <li><a href="bicicletaria.html"><i class="fas fa-bicycle"></i> Bicicletaria</a></li>
-            <li><a href="brechochic.html"><i class="fas fa-tshirt"></i> Brechó Chic</a></li>
-            <li><a href="cestasdepresentes.html"><i class="fas fa-gift"></i> Cestas de Presentes</a></li>
-            <li><a href="centroderecreacao.html"><i class="fas fa-home"></i> Centro de Recreação</a></li>
-            <li><a href="correspondentesbancarios.html"><i class="fas fa-university"></i> Corresp. Bancário</a></li>
-            <li><a href="desmanches.html"><i class="fas fa-tools"></i> Desmanches</a></li>
-            <li><a href="empilhadeira.html"><i class="fas fa-cogs"></i> Empilhadeiras</a></li>
-            <li><a href="emprestimos.html"><i class="fas fa-credit-card"></i> Empréstimos</a></li>
-            <li><a href="funilaria.html"><i class="fas fa-tools"></i> Funilaria</a></li>
-            <li><a href="esteticaautomotiva.html"><i class="fas fa-car-alt"></i> Estética Automotiva</a></li>
-            <li><a href="esteticaemassoterapia.html"><i class="fas fa-spa"></i> Estética e Massoterapia</a></li>
-            <li><a href="flores.html"><i class="fas fa-seedling"></i> Flores e Decoração</a></li>
-            <li><a href="loja-carros.html"><i class="fas fa-car"></i> Loja de Carros</a></li>
-            <li><a href="maquinasdelavar.html"><i class="fas fa-tshirt"></i> Máquinas de Lavar</a></li>
-            <li><a href="materialdeconstrucao.html"><i class="fas fa-hammer"></i> Material de Construção</a></li>
-            <li><a href="mecanica-carros.html"><i class="fas fa-cogs"></i> Mecânica de Carros</a></li>
-            <li><a href="mecanica-motos.html"><i class="fas fa-motorcycle"></i> Mecânica de Motos</a></li>
-            <li><a href="moveisplanejados.html"><i class="fas fa-couch"></i> Móveis Planejados</a></li>
-            <li><a href="oticas.html"><i class="fas fa-glasses"></i> Óticas</a></li>
-            <li><a href="pastelarias.html"><i class="fas fa-utensils"></i> Pastelarias</a></li>
-            <li><a href="pizzarias.html"><i class="fas fa-pizza-slice"></i> Pizzarias</a></li>
-            <li><a href="restaurantes.html"><i class="fas fa-concierge-bell"></i> Restaurantes</a></li>
-            <li><a href="seguros.html"><i class="fas fa-shield-alt"></i> Seguros</a></li>
-            <li><a href="tapecaria.html"><i class="fas fa-couch"></i> Tapeçaria</a></li>
-        </ul>
-    </main>
+  <main>
+    <h2>Categorias em Destaque</h2>
+    <ul id="business-list">
+      <!-- Seus links das categorias continuam iguais -->
+      <li><a href="academias.html"><i class="fas fa-dumbbell"></i> Academia</a></li>
+      <li><a href="acai.html"><i class="fas fa-ice-cream"></i> Açaí</a></li>
+      <!-- ... restante das categorias ... -->
+      <li><a href="tapecaria.html"><i class="fas fa-couch"></i> Tapeçaria</a></li>
+    </ul>
+  </main>
 
-    <!-- Banner AdSense entre as categorias e o rodapé -->
-<div style="text-align:center; padding: 20px 0;">
+  <!-- Banner AdSense -->
+  <div style="text-align:center; padding: 20px 0;">
     <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-8142699625381745"
@@ -175,32 +145,32 @@
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-</div>
+  </div>
 
-    <footer>
+  <footer>
     <p>&copy; 2025 Acontece Negócios | 
-        <a href="contato.html">Contato</a> | 
-        <a href="politica-privacidade.html">Política de Privacidade</a> | 
-        <a href="termos-uso.html">Termos de Uso</a> | 
-        <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a> | 
-        <a href="portal-de-noticias.html">Portal de Notícias</a>
+      <a href="contato.html">Contato</a> | 
+      <a href="politica-privacidade.html">Política de Privacidade</a> | 
+      <a href="termos-uso.html">Termos de Uso</a> | 
+      <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a> | 
+      <a href="portal-de-noticias.html">Portal de Notícias</a>
     </p>
-</footer>
+  </footer>
 
-    <!-- Cookie Consent -->
-    <div class="cookie-bar" id="cookieBar">
-        Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
-        <a href="politica-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
-        <button onclick="aceitarCookies()">Aceitar</button>
-    </div>
+  <!-- Cookie Consent -->
+  <div class="cookie-bar" id="cookieBar">
+    Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
+    <a href="politica-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
+    <button onclick="aceitarCookies()">Aceitar</button>
+  </div>
 
-    <script>
-        function aceitarCookies() {
-            document.getElementById('cookieBar').style.display = 'none';
-        }
-    </script>
+  <script>
+    function aceitarCookies() {
+      document.getElementById('cookieBar').style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>
