@@ -1,106 +1,196 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guia Acontece Negócios - Maquinas de Lavar">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>Máquinas de Lavar - Guia Acontece Negócios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-8142699625381745">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Acontece Negócios">
+  <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
 
-        header {
-            background-color: #f44b4b; /* Vermelho do iFood */
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+  <title>Acontece Negócios - Sua empresa em destaque</title>
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+  <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
 
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 15px;
-        }
+  <!-- Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9L8N6PNTCZ');
+  </script>
 
-        .anuncio {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+  <!-- Google AdSense -->
+  <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8142699625381745" crossorigin="anonymous"></script>
 
-        .anuncio h2 {
-            font-size: 22px;
-            color: #f44b4b;
-        }
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        .anuncio p {
-            margin: 8px 0;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #f44b4b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header i {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
 
-        .anuncio a {
-            color: #007bff;
-            text-decoration: none;
-        }
+    .anuncio-container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-        .anuncio a:hover {
-            text-decoration: underline;
-        }
+    .anuncio-container h2 {
+      color: #f44b4b;
+      margin-bottom: 20px;
+    }
 
-        .btn-voltar {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #f44b4b;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            text-align: center;
-        }
+    .anuncio-container ul {
+      text-align: left;
+      margin: 20px 0;
+      padding-left: 20px;
+    }
 
-        .btn-voltar:hover {
-            background-color: #e43c3c;
-        }
-    </style>
+    .anuncio-container li {
+      margin-bottom: 10px;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-whatsapp i {
+      margin-left: 10px;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Máquinas de Lavar</h1>
-        <p>Encontre os melhores lugares para comer e beber na sua região.</p>
-    </header>
 
-    <main>
-        <!-- Modelo de anúncio -->
-        <div class="anuncio">
-            <h2>Loja Seu Eletro Aqui Salto, Indaiatuba, Itu e Região</h2>
-            <p><strong>Endereço:</strong> <a href=""></a></p>
-            <p><strong>Telefone:</strong> <a href="https://wa.me/5511973512633" target="_blank">(11) 97351-2633 (WhatsApp)</a></p>
-	    <p><strong>Telefone:</strong></a></p>
-             <p><strong>Instagram:</strong> <a href=https://www.instagram.com/oseueletroaqui/" target="_blank">@oseueletroaqui</a></p>
-            <p><strong>Facebook:</strong> </a></p>
-            <p><strong>Site:</strong> </a></p>
-            <p><strong>Descrição:</strong> 
-<p>⚡ **Seu Eletro Aqui** – O melhor lugar para comprar sua máquina usada com confiança e economia! 💸 Atendemos Itu, Salto, Indaiatuba e toda a região, oferecendo o <strong>melhor custo-benefício</strong> para você. Aqui, todas as <strong>máquinas usadas são revisadas</strong> e passam por uma <strong>revisão completa com garantia de 3 meses</strong>, para que você tenha total segurança na compra. Além disso, contamos com um serviço de <strong>entrega rápida</strong>, levando o seu novo eletrodoméstico diretamente para sua casa. Não perca a oportunidade de economizar com qualidade. Venha para o <strong>Seu Eletro Aqui</strong> e faça a escolha certa para o seu lar!</p>
- </div>
+  <header>
+    <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
+    <p>Encontre os melhores negócios da categoria Máquinas de Lavar em Itu/São-Paulo</p>
+    <p style="font-weight: bold; font-size: 1.1em; margin-top: 10px;">O maior buscador de empresas do Brasil</p>
+  </header>
 
+<div style="background-color: #ffe8e8; text-align: center; padding: 15px; font-weight: bold; font-size: 1.1em; border-bottom: 2px solid #f44b4b;">
+  Deseja anunciar aqui também? <a href="https://wa.me/5511991389974" target="_blank" style="color: #f44b4b; text-decoration: underline;">Clique aqui e fale conosco!</a>
 </div>
-        <!-- Botão para voltar à página inicial -->
-        <a href="index.html" class="btn-voltar">Voltar para a página inicial</a>
-    </main>
-</body>
-</html>
+
+<!-- Anúncio Loja Seu Eletro Aqui -->
+<div class="anuncio-container">
+  <p style="font-style: italic; font-weight: 500; color: #333;">
+    Eletrodomésticos usados com garantia e economia de verdade!
+  </p>
+
+  <h2><i class="fas fa-store"></i> Loja Seu Eletro Aqui – Salto, Indaiatuba, Itu e Região</h2>
+
+  <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Salto/SP</p>
+
+  <p><i class="fab fa-whatsapp"></i> <strong>Telefone/WhatsApp:</strong> 
+    <a href="https://wa.me/5511973512633" target="_blank">(11) 97351-2633 (WhatsApp)</a>
+  </p>
+
+  <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> 
+    <a href="https://www.instagram.com/oseueletroaqui/" target="_blank">@oseueletroaqui</a>
+  </p>
+
+  <p><i class="fab fa-facebook"></i> <strong>Facebook:</strong> Não informado</p>
+
+  <p><i class="fas fa-globe"></i> <strong>Site:</strong> Não informado</p>
+
+  <p><i class="fas fa-align-left"></i> <strong>Descrição:</strong></p>
+  <p>
+    ⚡ <strong>Seu Eletro Aqui</strong> – O melhor lugar para comprar sua máquina usada com confiança e economia! 💸<br>
+    Atendemos Itu, Salto, Indaiatuba e toda a região, oferecendo o <strong>melhor custo-benefício</strong> para você.<br>
+    Aqui, todas as <strong>máquinas usadas são revisadas</strong> e passam por uma <strong>revisão completa com garantia de 3 meses</strong>, para que você tenha total segurança na compra.<br>
+    Além disso, contamos com um serviço de <strong>entrega rápida</strong>, levando o seu novo eletrodoméstico diretamente para sua casa.<br>
+    Não perca a oportunidade de economizar com qualidade. Venha para o <strong>Seu Eletro Aqui</strong> e faça a escolha certa para o seu lar!
+  </p>
+
+  <p><i class="fas fa-tags"></i> <strong>Palavras-chave:</strong> 
+    Loja de Eletrodomésticos Usados em Salto, Máquinas Usadas com Garantia em Salto, Seu Eletro Aqui Salto, Loja de Eletrodomésticos em Indaiatuba, Lavadoras Usadas Itu, Entrega Rápida de Eletros em Itu, 
+    Eletrodomésticos Baratos Salto, Onde Comprar Máquina Usada com Garantia em Salto, Loja de Usados Indaiatuba, Eletros com Garantia Itu, Loja de Usados Itu e Região
+  </p>
+
+  <!-- Botão de WhatsApp -->
+  <div style="margin-top: 15px;">
+    <a href="https://wa.me/5511973512633" target="_blank" style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block;">
+      <i class="fab fa-whatsapp"></i> Clique e converse com o Seu Eletro Aqui via WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Chamada de Ação -->
+<div style="max-width: 700px; margin: 40px auto; background-color: #fff8e1; padding: 30px; border-radius: 12px; border: 2px dashed #f44b4b; box-shadow: 0 0 15px rgba(0,0,0,0.05); text-align: center;">
+  <h2 style="color: #f44b4b;"><i class="fas fa-bullhorn"></i> Quer ver sua empresa aqui?</h2>
+  <p style="font-size: 1.2em; margin: 20px 0;">
+    Empreendedor de <strong>Itu/Sao-paulo</strong>, anuncie sua empresa no <strong>Acontece Negócios</strong> e conquiste visibilidade em Itu e toda a sua região!
+    Seu anúncio também aparece nas <strong>buscas do Google</strong>, potencializando seu alcance e atraindo muito mais clientes para o seu negócio.
+  </p>
+  <a href="https://wa.me/5511991389974" target="_blank" style="background-color: #25D366; color: white; padding: 14px 25px; border-radius: 8px; text-decoration: none; font-size: 18px; font-weight: bold; display: inline-block; transition: background-color 0.3s;">
+    <i class="fab fa-whatsapp"></i> Fale com a gente e anuncie agora!
+  </a>
+</div>
+
+<!-- Banner AdSense -->
+  <div style="text-align:center; padding: 20px 0;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8142699625381745" data-ad-slot="5670006916" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <footer>        
+    <p><a href="contato.html">Contato</a> | <a href="politica-privacidade.html">Política de Privacidade</a> | <a href="termos-uso.html">Termos de Uso</a></p>
+    <p>© 2025 Acontece Negócios. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+</body></html>
