@@ -6,12 +6,16 @@
   <meta name="google-adsense-account" content="ca-pub-8142699625381745">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Acontece Negócios">
-  <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
-  
-  <title>Acontece Negócios - Sua empresa em destaque</title>
+  <meta name="description" content="Acontece Negócios: encontre empresas, comércios, indústrias e prestadores de serviços. Divulgue sua empresa e conecte-se a novos clientes.">
+  <meta name="theme-color" content="#e5242a">
+  <title>Acontece Negócios | O maior buscador de empresas do Brasil</title>
   <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics: mantido -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,162 +24,365 @@
     gtag('config', 'G-9L8N6PNTCZ');
   </script>
 
-  <!-- Google AdSense -->
+  <!-- Google AdSense: mantido -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8142699625381745" crossorigin="anonymous"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Estilos CSS -->
   <style>
+    :root {
+      --red: #e5242a;
+      --red-dark: #bd171d;
+      --ink: #111820;
+      --muted: #66707b;
+      --paper: #ffffff;
+      --soft: #f4f5f7;
+      --line: #e7e9ed;
+      --radius: 20px;
+      --shadow: 0 14px 38px rgba(17, 24, 32, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.5;
     }
-    header {
-      background-color: #f44b4b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    a { color: inherit; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .topline { height: 5px; background: linear-gradient(90deg, var(--red), #ff6b54); }
+    .site-header { background: #fff; border-bottom: 1px solid var(--line); }
+    .nav {
+      min-height: 92px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
     }
-    header i {
-      font-size: 40px;
-      margin-right: 10px;
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      width: 54px; height: 54px; border-radius: 17px; display: grid; place-items: center;
+      color: white; background: var(--red); font-size: 25px;
+      box-shadow: 0 8px 18px rgba(229,36,42,.22);
     }
-    header h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
+    .brand-name { font-weight: 900; font-size: clamp(20px, 2.4vw, 29px); letter-spacing: -1.3px; line-height: 1.05; }
+    .brand-name span { color: var(--red); }
+    .brand-caption { display: block; margin-top: 5px; color: #68717b; font-size: 10px; font-weight: 800; letter-spacing: 1.1px; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 25px; }
+    .nav-links a { text-decoration: none; color: #424b55; font-weight: 700; font-size: 13px; }
+    .nav-links a:hover { color: var(--red); }
+    .nav-cta, .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border: 0; border-radius: 12px; background: var(--red); color: #fff !important;
+      padding: 13px 18px; text-decoration: none; font: inherit; font-size: 13px;
+      font-weight: 800; cursor: pointer; transition: transform .2s, background .2s;
     }
-    header p {
-      font-size: 1.2em;
+    .nav-cta:hover, .btn:hover { background: var(--red-dark); transform: translateY(-2px); }
+    .hero {
+      position: relative; overflow: hidden; padding: 76px 0 66px;
+      background: radial-gradient(circle at 88% 20%, rgba(229,36,42,.10), transparent 28%), linear-gradient(120deg, #fff 48%, #f6f7f9);
     }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
+    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: 52px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px;
+      border: 1px solid #ffd5d6; border-radius: 999px; background: #fff5f5;
+      color: var(--red-dark); font-size: 11px; font-weight: 900; letter-spacing: .8px; text-transform: uppercase;
     }
-    footer a {
-      color: #fff;
-      text-decoration: none;
+    .hero h1 { max-width: 650px; margin: 20px 0 18px; font-size: clamp(42px, 5.6vw, 70px); line-height: .99; letter-spacing: -3.7px; font-weight: 900; }
+    .hero h1 span { color: var(--red); }
+    .hero-copy { max-width: 540px; margin: 0; color: #535d68; font-size: 17px; line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn-secondary { background: var(--ink); }
+    .btn-secondary:hover { background: #303943; }
+    .hero-points { display: flex; flex-wrap: wrap; gap: 17px; margin-top: 25px; color: #505a65; font-size: 12px; font-weight: 700; }
+    .hero-points span { display: inline-flex; align-items: center; gap: 7px; }
+    .hero-points i { color: var(--red); }
+    .hero-visual {
+      position: relative; min-height: 365px; padding: 28px; border: 1px solid #e8eaee;
+      border-radius: 26px; background: rgba(255,255,255,.88); box-shadow: var(--shadow);
+      transform: rotate(1deg);
     }
-    ul#business-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      list-style-type: none;
+    .visual-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    .mini-brand { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 900; letter-spacing: -.5px; }
+    .mini-brand i { color: var(--red); font-size: 21px; }
+    .live-pill { border-radius: 999px; padding: 6px 9px; background: #eaf8ef; color: #247b45; font-size: 10px; font-weight: 800; }
+    .search-demo { display: flex; gap: 8px; margin: 22px 0; padding: 8px; border: 1px solid #e2e5e9; border-radius: 13px; background: white; box-shadow: 0 5px 16px rgba(0,0,0,.04); }
+    .search-demo span { flex: 1; padding: 9px 10px; color: #8a929b; font-size: 12px; }
+    .search-demo i { width: 40px; display: grid; place-items: center; border-radius: 9px; background: var(--red); color: #fff; }
+    .visual-label { margin: 0 0 12px; font-size: 11px; color: #7b838d; font-weight: 800; text-transform: uppercase; letter-spacing: .8px; }
+    .visual-categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .visual-category { min-height: 93px; padding: 13px 7px; border: 1px solid var(--line); border-radius: 13px; text-align: center; background: #fff; }
+    .visual-category i { display: block; margin-bottom: 10px; color: var(--red); font-size: 21px; }
+    .visual-category b { font-size: 10px; }
+    .sample-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
+    .sample-item { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 12px; background: #f6f7f8; }
+    .sample-icon { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 10px; color: var(--red); background: #ffe7e8; }
+    .sample-item b { display: block; font-size: 11px; }
+    .sample-item small { color: #7c858e; font-size: 9px; }
+    .visual-note { position: absolute; right: -18px; bottom: -22px; padding: 14px 18px; border-radius: 14px; background: var(--ink); color: #fff; box-shadow: var(--shadow); font-size: 12px; font-weight: 800; transform: rotate(-2deg); }
+    .visual-note strong { color: #ff6b70; }
+    .section { padding: 70px 0; }
+    .section-soft { background: var(--soft); }
+    .section-head { max-width: 690px; margin: 0 auto 35px; text-align: center; }
+    .section-kicker { color: var(--red); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; }
+    .section h2 { margin: 10px 0 12px; font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -1.5px; line-height: 1.12; }
+    .section-head p { margin: 0; color: var(--muted); font-size: 15px; }
+    .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 17px; }
+    .category-card { padding: 25px 21px; border: 1px solid var(--line); border-radius: var(--radius); background: white; transition: transform .2s, box-shadow .2s; }
+    .category-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .category-icon { width: 52px; height: 52px; display: grid; place-items: center; margin-bottom: 18px; border-radius: 16px; color: white; background: var(--red); font-size: 21px; }
+    .category-card:nth-child(even) .category-icon { background: var(--ink); }
+    .category-card h3 { margin: 0 0 8px; font-size: 17px; letter-spacing: -.4px; }
+    .category-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .city-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .city-card {
+      display: flex; align-items: center; gap: 16px; padding: 20px; border: 1px solid var(--line);
+      border-radius: 17px; background: #fff; text-decoration: none; transition: .2s;
     }
-    ul#business-list li {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      text-align: center;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .city-card:hover { border-color: #f2a4a7; box-shadow: 0 10px 26px rgba(17,24,32,.07); transform: translateY(-3px); }
+    .city-icon { width: 52px; height: 52px; flex: 0 0 52px; display: grid; place-items: center; border-radius: 15px; background: #fff0f0; color: var(--red); font-size: 21px; }
+    .city-card h3 { margin: 0 0 4px; font-size: 16px; }
+    .city-card p { margin: 0; color: var(--muted); font-size: 12px; }
+    .city-arrow { margin-left: auto; color: #a1a8b0; }
+    .advertise { padding: 0 0 75px; background: var(--soft); }
+    .advertise-box {
+      display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 25px;
+      padding: 38px 42px; border-radius: 24px; color: #fff;
+      background: linear-gradient(115deg, #111820 0%, #252e38 100%); overflow: hidden; position: relative;
     }
-    ul#business-list li:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    }
-    ul#business-list a {
-      color: #0077cc;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    .advertise-box:after { content: ""; position: absolute; right: 15%; top: -110px; width: 260px; height: 260px; border: 42px solid rgba(229,36,42,.22); border-radius: 50%; }
+    .advertise-box > * { position: relative; z-index: 1; }
+    .advertise-box .section-kicker { color: #ff7378; }
+    .advertise-box h2 { margin: 8px 0 10px; font-size: clamp(25px, 3vw, 36px); letter-spacing: -1.1px; }
+    .advertise-box p { max-width: 600px; margin: 0; color: #c8cdd3; font-size: 14px; }
+    .advertise-price { min-width: 185px; text-align: center; padding: 21px; border: 1px solid rgba(255,255,255,.15); border-radius: 17px; background: rgba(255,255,255,.06); }
+    .advertise-price small { display: block; color: #ff9a9d; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+    .advertise-price strong { display: block; margin: 3px 0 13px; font-size: 30px; letter-spacing: -1px; }
+    .ad-wrap { padding: 24px 0; text-align: center; overflow: hidden; }
+    .ad-label { display: block; margin-bottom: 8px; color: #8b929b; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+    footer { padding: 32px 0; color: #d5d9de; background: #111820; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .footer-brand { color: #fff; font-weight: 900; font-size: 17px; }
+    .footer-brand span { color: #ff555b; }
+    .footer-copy { margin: 7px 0 0; color: #9da6b0; font-size: 11px; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px 20px; }
+    .footer-links a { color: #d5d9de; text-decoration: none; font-size: 11px; }
+    .footer-links a:hover { color: #ff777b; }
     .cookie-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 14px;
-      display: none;
+      position: fixed; z-index: 20; left: 20px; right: 20px; bottom: 20px; max-width: 850px; margin: auto;
+      display: none; align-items: center; gap: 16px; padding: 16px 18px; border: 1px solid #343d47;
+      border-radius: 15px; background: #111820; color: #fff; box-shadow: 0 15px 45px rgba(0,0,0,.25); font-size: 12px;
     }
-    .cookie-bar button {
-      background-color: #f1c40f;
-      border: none;
-      color: black;
-      padding: 8px 15px;
-      cursor: pointer;
+    .cookie-bar a { color: #ff777b; }
+    .cookie-bar button { flex: 0 0 auto; border: 0; border-radius: 9px; padding: 10px 15px; background: var(--red); color: white; font-weight: 800; cursor: pointer; }
+    @media (max-width: 900px) {
+      .nav-links { gap: 13px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding: 55px 0; }
+      .hero-grid { grid-template-columns: 1fr; gap: 38px; }
+      .hero-copy { max-width: 680px; }
+      .hero-visual { max-width: 620px; width: 100%; margin: 0 auto; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .city-grid { grid-template-columns: repeat(2, 1fr); }
+      .advertise-box { grid-template-columns: 1fr; }
+      .advertise-price { width: fit-content; text-align: left; }
+      .advertise-price strong { display: inline-block; margin-right: 12px; }
     }
-    h2 {
-      text-align: center;
-      font-size: 2em;
-      margin: 30px 0;
+    @media (max-width: 560px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .nav { min-height: 76px; gap: 10px; }
+      .brand { gap: 8px; }
+      .brand-mark { width: 43px; height: 43px; border-radius: 13px; font-size: 20px; }
+      .brand-name { font-size: 20px; letter-spacing: -1px; }
+      .brand-caption { font-size: 8px; letter-spacing: .6px; }
+      .nav-cta { padding: 11px 12px; font-size: 11px; }
+      .hero { padding: 43px 0 48px; }
+      .hero h1 { font-size: clamp(41px, 12vw, 57px); letter-spacing: -2.8px; }
+      .hero-copy { font-size: 15px; }
+      .hero-visual { min-height: auto; padding: 17px; border-radius: 19px; }
+      .visual-categories { gap: 6px; }
+      .visual-category { min-height: 80px; padding: 10px 3px; }
+      .visual-category i { font-size: 18px; }
+      .visual-category b { font-size: 9px; }
+      .sample-list { gap: 7px; }
+      .sample-item { padding: 7px; gap: 7px; }
+      .sample-icon { width: 30px; height: 30px; }
+      .visual-note { right: 5px; bottom: -24px; font-size: 10px; }
+      .section { padding: 52px 0; }
+      .category-grid { gap: 10px; }
+      .category-card { padding: 17px 14px; border-radius: 15px; }
+      .category-icon { width: 43px; height: 43px; margin-bottom: 13px; font-size: 18px; border-radius: 13px; }
+      .category-card h3 { font-size: 14px; }
+      .category-card p { font-size: 11px; }
+      .city-grid { grid-template-columns: 1fr; gap: 10px; }
+      .city-card { padding: 15px; }
+      .advertise { padding-bottom: 52px; }
+      .advertise-box { padding: 27px 22px; border-radius: 19px; }
+      .advertise-price { width: 100%; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .footer-links { justify-content: flex-start; }
+      .cookie-bar { left: 10px; right: 10px; bottom: 10px; align-items: flex-start; flex-direction: column; }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
-    <p>Descubra os melhores negócios e serviços perto de você</p>
-<p style="font-weight: bold; font-size: 1.1em; margin-top: 10px;">
-      O maior buscador de empresas do Brasil
-    </p>
+  <div class="topline"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Acontece Negócios - página inicial">
+        <span class="brand-mark"><i class="fa-solid fa-magnifying-glass-location"></i></span>
+        <span>
+          <span class="brand-name">Acontece <span>Negócios</span></span>
+          <span class="brand-caption">O maior buscador de empresas do Brasil</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#categorias">Categorias</a>
+        <a href="#cidades">Cidades</a>
+        <a class="nav-cta" href="#anuncie"><i class="fa-solid fa-bullhorn"></i> Anuncie sua empresa</a>
+      </nav>
+    </div>
   </header>
 
-<main style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
-    <!-- Escolha a Cidade, agora centralizado -->
-    <h2>Escolha a Cidade</h2>
-    <ul id="business-list" style="list-style: none; padding: 0; margin: 0;">
-        <li style="margin: 10px 0;"><a href="sao-paulo-itu.html">🏛️ Itu - SP</a></li>
-        <li style="margin: 10px 0;"><a href="sao-paulo-salto.html">🌉 Salto - SP</a></li>
-        <li style="margin: 10px 0;"><a href="sao-paulo-cabreuva.html">🌳 Cabreúva - SP</a></li>
-        <li style="margin: 10px 0;"><a href="sao-paulo-indaiatuba.html">🏙️ Indaiatuba - SP</a></li>
-        <li style="margin: 10px 0;"><a href="sao-paulo-sorocaba.html">🏢 Sorocaba - SP</a></li>
-        <li style="margin: 10px 0;"><a href="sao-paulo-campinas.html">🏫 Campinas - SP</a></li>
-    </ul>
-</main>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Negócios perto de você</span>
+          <h1>Sua empresa mais perto dos <span>clientes.</span></h1>
+          <p class="hero-copy">Encontre comércios, indústrias e prestadores de serviços em um só lugar. Descubra negócios da sua região ou dê mais visibilidade à sua empresa.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#cidades"><i class="fa-solid fa-magnifying-glass"></i> Encontrar empresas</a>
+            <a class="btn btn-secondary" href="#anuncie"><i class="fa-solid fa-store"></i> Divulgar meu negócio</a>
+          </div>
+          <div class="hero-points">
+            <span><i class="fa-solid fa-circle-check"></i> Várias categorias</span>
+            <span><i class="fa-solid fa-circle-check"></i> Cidades em um só portal</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Prévia ilustrativa da plataforma Acontece Negócios">
+          <div class="visual-top">
+            <div class="mini-brand"><i class="fa-solid fa-magnifying-glass-location"></i> Acontece Negócios</div>
+            <span class="live-pill"><i class="fa-solid fa-circle"></i> Portal de empresas</span>
+          </div>
+          <div class="search-demo"><span>O que você procura?</span><i class="fa-solid fa-magnifying-glass"></i></div>
+          <p class="visual-label">Explore por categoria</p>
+          <div class="visual-categories">
+            <div class="visual-category"><i class="fa-solid fa-cart-shopping"></i><b>Comércios</b></div>
+            <div class="visual-category"><i class="fa-solid fa-industry"></i><b>Indústrias</b></div>
+            <div class="visual-category"><i class="fa-solid fa-screwdriver-wrench"></i><b>Serviços</b></div>
+            <div class="visual-category"><i class="fa-solid fa-user-tie"></i><b>Autônomos</b></div>
+          </div>
+          <div class="sample-list">
+            <div class="sample-item"><span class="sample-icon"><i class="fa-solid fa-shop"></i></span><span><b>Comércio local</b><small>Empresas e lojas</small></span></div>
+            <div class="sample-item"><span class="sample-icon"><i class="fa-solid fa-wrench"></i></span><span><b>Prestadores</b><small>Serviços profissionais</small></span></div>
+          </div>
+          <div class="visual-note"><strong>Mais visibilidade.</strong> Mais oportunidades.</div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Banner AdSense -->
-  <div style="text-align:center; padding: 20px 0;">
-    <ins class="adsbygoogle"
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Encontre o que precisa</span>
+          <h2>Um portal para conectar negócios e pessoas</h2>
+          <p>Navegue por diferentes segmentos e descubra empresas e profissionais.</p>
+        </div>
+        <div class="category-grid">
+          <article class="category-card"><div class="category-icon"><i class="fa-solid fa-cart-shopping"></i></div><h3>Comércio</h3><p>Lojas, mercados, restaurantes e estabelecimentos da sua região.</p></article>
+          <article class="category-card"><div class="category-icon"><i class="fa-solid fa-industry"></i></div><h3>Indústria</h3><p>Fábricas, confecções, produção e fornecedores.</p></article>
+          <article class="category-card"><div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Prestadores de serviços</h3><p>Eletricistas, encanadores, manutenção e serviços especializados.</p></article>
+          <article class="category-card"><div class="category-icon"><i class="fa-solid fa-user-tie"></i></div><h3>Autônomos</h3><p>Profissionais liberais, freelancers e especialistas independentes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="cidades">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Explore por localização</span>
+          <h2>Escolha sua cidade</h2>
+          <p>Selecione uma cidade para acessar as empresas e categorias disponíveis.</p>
+        </div>
+        <div class="city-grid">
+          <a class="city-card" href="sao-paulo-itu.html"><span class="city-icon"><i class="fa-solid fa-landmark"></i></span><span><h3>Itu – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+          <a class="city-card" href="sao-paulo-salto.html"><span class="city-icon"><i class="fa-solid fa-bridge"></i></span><span><h3>Salto – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+          <a class="city-card" href="sao-paulo-cabreuva.html"><span class="city-icon"><i class="fa-solid fa-tree"></i></span><span><h3>Cabreúva – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+          <a class="city-card" href="sao-paulo-indaiatuba.html"><span class="city-icon"><i class="fa-solid fa-city"></i></span><span><h3>Indaiatuba – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+          <a class="city-card" href="sao-paulo-sorocaba.html"><span class="city-icon"><i class="fa-solid fa-building"></i></span><span><h3>Sorocaba – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+          <a class="city-card" href="sao-paulo-campinas.html"><span class="city-icon"><i class="fa-solid fa-school"></i></span><span><h3>Campinas – SP</h3><p>Ver empresas da cidade</p></span><i class="fa-solid fa-arrow-right city-arrow"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="advertise" id="anuncie">
+      <div class="container">
+        <div class="advertise-box">
+          <div>
+            <span class="section-kicker">Sua empresa merece ser encontrada</span>
+            <h2>Coloque seu negócio em evidência.</h2>
+            <p>Apresente sua empresa no Acontece Negócios e facilite que potenciais clientes encontrem seus produtos e serviços.</p>
+          </div>
+          <div class="advertise-price">
+            <small>Divulgação anual</small>
+            <strong>R$ 97,00 <span style="font-size:12px;font-weight:600;letter-spacing:0">/ ano</span></strong>
+            <a class="btn" href="https://www.acontecenegocios.com.br/contato.html"><i class="fa-brands fa-whatsapp"></i> Quero anunciar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Google AdSense: código e identificadores mantidos -->
+    <div class="container ad-wrap">
+      <span class="ad-label">Publicidade</span>
+      <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-8142699625381745"
         data-ad-slot="5670006916"
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Acontece Negócios | 
-      <a href="contato.html">Contato</a> | 
-      <a href="politica-privacidade.html">Política de Privacidade</a> | 
-      <a href="termos-uso.html">Termos de Uso</a> | 
-      <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a> | 
-      <a href="portal-de-noticias.html">Portal de Notícias</a>
-    </p>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Acontece <span>Negócios</span></div>
+        <p class="footer-copy">&copy; <span id="currentYear">2026</span> Acontece Negócios. Todos os direitos reservados.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="contato.html">Contato</a>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos-uso.html">Termos de Uso</a>
+        <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a>
+        <a href="portal-de-noticias.html">Portal de Notícias</a>
+      </nav>
+    </div>
   </footer>
 
-  <!-- Cookie Consent -->
-  <div class="cookie-bar" id="cookieBar">
-    Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
-    <a href="politica-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
-    <button onclick="aceitarCookies()">Aceitar</button>
+  <div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Aviso de cookies">
+    <div>Este site utiliza cookies para melhorar sua experiência. Saiba mais em nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</div>
+    <button type="button" id="acceptCookies">Aceitar</button>
   </div>
 
   <script>
-    function aceitarCookies() {
-      document.getElementById('cookieBar').style.display = 'none';
-    }
-  </script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+    // Consentimento simples: a escolha fica salva neste navegador.
+    // Para consentimento compatível com requisitos legais/AdSense, avalie uma CMP apropriada.
+    const cookieBar = document.getElementById('cookieBar');
+    try {
+      if (localStorage.getItem('aconteceCookiesAccepted') !== 'yes') {
+        cookieBar.style.display = 'flex';
+      }
+    } catch (e) {
+      cookieBar.style.display = 'flex';
+    }
+    document.getElementById('acceptCookies').addEventListener('click', function () {
+      cookieBar.style.display = 'none';
+      try { localStorage.setItem('aconteceCookiesAccepted', 'yes'); } catch (e) {}
+    });
+  </script>
 </body>
 </html>
