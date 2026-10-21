@@ -1,186 +1,257 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8142699625381745">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Acontece Negócios">
-    <meta name="description" content="Portal de Negócios Acontece: Anuncie sua empresa, encontre oportunidades e informações úteis.">
-
-  <title>Acontece Negócios - Sua empresa em destaque</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-8142699625381745">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Acontece Negócios">
+  <meta name="description" content="Encontre empresas, serviços e profissionais em Itu, São Paulo. Explore categorias e descubra negócios locais no Acontece Negócios.">
+  <title>Empresas em Itu | Acontece Negócios</title>
   <link rel="icon" href="https://www.acontecenegocios.com.br/favicon.ico">
-
-   <!-- Link para o Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9L8N6PNTCZ');
-</script>
-
-    <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8142699625381745" crossorigin="anonymous"></script>
-
-  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #f44b4b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header i {
-            font-size: 40px;
-            margin-right: 10px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            background: white;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        ul li:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        ul li a {
-            text-decoration: none;
-            color: #0077cc;
-            font-weight: bold;
-        }
-        h2, h3 {
-            text-align: center;
-        }
-    </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8N6PNTCZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9L8N6PNTCZ');
+  </script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8142699625381745" crossorigin="anonymous"></script>
+  <style>
+    :root{--red:#f44b4b;--red-dark:#df3737;--ink:#252525;--muted:#686868;--bg:#f6f6f6;--line:#ececec;--white:#fff;--green:#25d366;--shadow:0 12px 32px rgba(35,35,35,.07)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}
+    a{color:inherit}
+    .topline{height:5px;background:var(--red)}
+    .site-header{background:linear-gradient(135deg,#fff 0%,#fff8f8 100%);border-bottom:1px solid #f0e5e5}
+    .header-inner{max-width:1160px;margin:auto;padding:20px 24px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:22px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:-.7px;font-size:1.25rem}
+    .brand-mark{width:42px;height:42px;display:grid;place-items:center;background:var(--red);color:#fff;border-radius:13px;font-size:1.1rem;box-shadow:0 7px 16px #f44b4b35}
+    .brand span em{font-style:normal;color:var(--red)}
+    .nav-link{font-size:.9rem;text-decoration:none;color:#555;font-weight:700}
+    .nav-link:hover{color:var(--red)}
+    .hero{max-width:860px;margin:0 auto;text-align:center;padding:42px 18px 54px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#ffe8e8;color:#c93232;padding:7px 13px;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.3px}
+    h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.1;letter-spacing:-1.8px;margin:20px 0 14px}
+    h1 .highlight{color:var(--red)}
+    .hero p{max-width:660px;margin:0 auto;color:var(--muted);font-size:1.04rem}
+    .hero-note{margin-top:23px!important;font-size:.9rem!important;font-weight:700;color:#454545!important}
+    .hero-note i{color:var(--red);margin-right:7px}
+    .page{max-width:1160px;margin:0 auto;padding:0 24px 52px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:0 0 20px}
+    .section-kicker{color:var(--red);font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:800}
+    h2{font-size:1.65rem;letter-spacing:-.6px;line-height:1.2;margin:5px 0 0}
+    .count{font-size:.84rem;color:var(--muted);white-space:nowrap}
+    .search-wrap{position:relative;margin:0 0 24px}
+    .search-wrap i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#888}
+    #categorySearch{width:100%;border:1px solid #e5e5e5;background:#fff;border-radius:14px;padding:16px 18px 16px 48px;font:inherit;outline:none;box-shadow:0 4px 14px #00000004}
+    #categorySearch:focus{border-color:#f6a0a0;box-shadow:0 0 0 4px #f44b4b12}
+    .category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .category-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 5px 18px #00000003;transition:transform .2s,box-shadow .2s,border-color .2s;min-width:0}
+    .category-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#f5caca}
+    .category-title{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-size:1rem;font-weight:800}
+    .category-icon{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;background:#fff0f0;color:var(--red);border-radius:12px;font-size:1.05rem}
+    .category-links{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+    .category-links li a{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#555;font-size:.91rem;padding:8px 9px;border-radius:9px;transition:background .18s,color .18s}
+    .category-links li a:after{content:"\f105";font-family:"Font Awesome 6 Free";font-weight:900;color:#bbb;font-size:.8rem}
+    .category-links li a:hover{background:#fff3f3;color:var(--red)}
+    .category-links li a:hover:after{color:var(--red)}
+    .empty-state{display:none;text-align:center;padding:35px 15px;color:var(--muted);background:#fff;border-radius:16px}
+    .ad-wrap{margin:30px auto 0;padding:18px 0;text-align:center;min-height:90px}
+    .business-cta{margin-top:28px;background:#fff;border:1px solid #f4d4d4;border-radius:20px;padding:27px 30px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .business-cta h2{font-size:1.35rem;margin:0 0 7px}
+    .business-cta p{margin:0;color:var(--muted);font-size:.93rem}
+    .cta-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:11px;white-space:nowrap;transition:background .2s,transform .2s}
+    .cta-button:hover{background:var(--red-dark);transform:translateY(-1px)}
+    footer{background:#292929;color:#eee;margin-top:0}
+    .footer-inner{max-width:1160px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+    .footer-brand{font-weight:800}
+    .footer-brand span{color:#ff7373}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+    .footer-links a{color:#ddd;text-decoration:none;font-size:.85rem}
+    .footer-links a:hover{color:#fff;text-decoration:underline}
+    .copyright{width:100%;border-top:1px solid #444;padding-top:16px;color:#aaa;font-size:.8rem}
+    @media(max-width:900px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.header-inner{padding:15px 16px 0}.nav{padding-bottom:10px}.brand{font-size:1.08rem}.brand-mark{width:38px;height:38px}.nav-link{font-size:.8rem}.hero{padding:35px 17px 43px}h1{letter-spacing:-1px}.hero p{font-size:.96rem}.page{padding:0 16px 35px}.section-head{align-items:start;flex-direction:column;gap:6px}h2{font-size:1.45rem}.category-grid{grid-template-columns:1fr;gap:12px}.category-card{padding:18px}.business-cta{padding:22px;align-items:stretch;flex-direction:column}.cta-button{width:100%}.footer-inner{padding:25px 18px}.footer-links{gap:12px}}
+  </style>
 </head>
 <body>
-    <header>
-        <h1><i class="fa-solid fa-magnifying-glass-location" style="color: #FFD43B;"></i> Acontece Negócios</h1>
-         <p>Descubra empresas, serviços e profissionais em Itu/São Paulo</p>
-    <p style="font-weight: bold; font-size: 1.1em; margin-top: 10px;">
-      O maior buscador de empresas do Brasil
-    </p>
-    
-    </header>
+  <div class="topline"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="https://www.acontecenegocios.com.br/" aria-label="Acontece Negócios - página inicial">
+          <span class="brand-mark"><i class="fa-solid fa-magnifying-glass-location"></i></span>
+          <span>Acontece <em>Negócios</em></span>
+        </a>
+        <a class="nav-link" href="https://www.acontecenegocios.com.br/contato.html">Fale conosco <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </nav>
+      <div class="hero">
+        <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> GUIA LOCAL DE EMPRESAS</span>
+        <h1>Encontre negócios em <span class="highlight">Itu</span></h1>
+        <p>Descubra empresas, serviços e profissionais da cidade. Explore as categorias e encontre o que precisa no Acontece Negócios.</p>
+        <p class="hero-note"><i class="fa-solid fa-compass"></i> O maior buscador de empresas do Brasil</p>
+      </div>
+    </div>
+  </header>
 
-<main class="container">
-  <section class="categorias">
-    <h2><i class="fas fa-tags"></i> Categorias em Destaque</h2>
-    <ul>
-      <li><strong>🛍️ Comércio</strong></li>
-      <li><a href="sao-paulo-itu-brechochic.html"><i class="fas fa-tshirt"></i> Brechó Chic</a></li>
-      <li><a href="sao-paulo-itu-materiais-de-construcao"><i class="fas fa-hammer"></i> Material de Construção</a></li>
-      <li><a href="sao-paulo-itu-maquinas-de-lavar.html"><i class="fas fa-sync-alt"></i> Máquinas de Lavar</a></li>
-      <li><a href="sao-paulo-itu-moveis-planejados"><i class="fas fa-couch"></i> Móveis Planejados</a></li>
-      <li><a href="sao-paulo-itu-oticas"><i class="fas fa-glasses"></i> Óticas</a></li>
-      <li><a href="sao-paulo-itu-presentes-e-utilidades.html"><i class="fas fa-gift"></i> Cestas de Presentes</a></li>
-      <li><a href="sao-paulo-itu-flores-e-decoracao"><i class="fas fa-seedling"></i> Flores e Decoração</a></li>
+  <main class="page">
+    <section aria-labelledby="categories-title">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Explore o guia</div>
+          <h2 id="categories-title">Categorias em destaque</h2>
+        </div>
+        <div class="count"><span id="visibleCount">31</span> opções para explorar</div>
+      </div>
+      <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input id="categorySearch" type="search" placeholder="Buscar uma categoria ou serviço..." aria-label="Buscar categoria ou serviço">
+      </div>
 
-      <li><strong>🍽️ Alimentação</strong></li>
-      <li><a href="sao-paulo-itu-acai.html"><i class="fas fa-ice-cream"></i> Açaí</a></li>
-      <li><a href="sao-paulo-itu-pastelarias.html"><i class="fas fa-utensils"></i> Pastelarias</a></li>
-      <li><a href="sao-paulo-itu-pizzarias"><i class="fas fa-pizza-slice"></i> Pizzarias</a></li>
-      <li><a href="sao-paulo-itu-restaurantes.html"><i class="fas fa-concierge-bell"></i> Restaurantes</a></li>
+      <div class="category-grid" id="categoryGrid">
+        <article class="category-card" data-category="comércio">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-bag-shopping"></i></span> Comércio</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-brechochic.html">Brechó Chic</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-materiais-de-construcao">Material de Construção</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-maquinas-de-lavar.html">Máquinas de Lavar</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-moveis-planejados">Móveis Planejados</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-oticas">Óticas</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-presentes-e-utilidades.html">Cestas de Presentes</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-flores-e-decoracao">Flores e Decoração</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🛠️ Serviços</strong></li>
-      <li><a href="sao-paulo-itu-auto-eletrica.html"><i class="fas fa-bolt"></i> Auto Elétrica</a></li>
-      <li><a href="sao-paulo-itu-alinhamento-e-balanceamento.html"><i class="fas fa-car"></i> Alinhamento e Balanceamento</a></li>
-      <li><a href="sao-paulo-itu-estetica-automotiva.html"><i class="fas fa-car-alt"></i> Estética Automotiva</a></li>
-      <li><a href="sao-paulo-itu-funilarias.html"><i class="fas fa-tools"></i> Funilaria</a></li>
-      <li><a href="sao-paulo-itu-tapecarias.html"><i class="fas fa-couch"></i> Tapeçaria</a></li>
-      <li><a href="sao-paulo-itu-empilhadeiras.html"><i class="fas fa-cogs"></i> Empilhadeiras</a></li>
-      <li><a href="sao-paulo-itu-desmanches.html"><i class="fas fa-tools"></i> Desmanches</a></li>
-      <li><a href="sao-paulo-itu-correspondentes-bancarios.html"><i class="fas fa-university"></i> Corresp. Bancário</a></li>
-      <li><a href="sao-paulo-itu-emprestimos.html"><i class="fas fa-credit-card"></i> Empréstimos</a></li>
+        <article class="category-card" data-category="alimentação">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-utensils"></i></span> Alimentação</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-acai.html">Açaí</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-pastelarias.html">Pastelarias</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-pizzarias">Pizzarias</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-restaurantes.html">Restaurantes</a></li>
+          </ul>
+        </article>
 
-      <li><strong>💇‍♂️ Beleza e Estética</strong></li>
-      <li><a href="sao-paulo-itu-barbearias.html"><i class="fas fa-cut"></i> Barbearia</a></li>
-      <li><a href="sao-paulo-itu-estetica-e-massoterapia.html"><i class="fas fa-spa"></i> Estética e Massoterapia</a></li>
+        <article class="category-card" data-category="serviços">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span> Serviços</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-auto-eletrica.html">Auto Elétrica</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-alinhamento-e-balanceamento.html">Alinhamento e Balanceamento</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-estetica-automotiva.html">Estética Automotiva</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-funilarias.html">Funilaria</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-tapecarias.html">Tapeçaria</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-empilhadeiras.html">Empilhadeiras</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-desmanches.html">Desmanches</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-correspondentes-bancarios.html">Correspondentes Bancários</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-emprestimos.html">Empréstimos</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🏥 Saúde e Bem-estar</strong></li>
-      <li><a href="sao-paulo-itu-academias"><i class="fas fa-dumbbell"></i> Academia</a></li>
-      <li><a href="sao-paulo-itu-centro-de-recreacao-infantil"><i class="fas fa-home"></i> Centro de Recreação</a></li>
+        <article class="category-card" data-category="beleza estética">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-spa"></i></span> Beleza e Estética</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-barbearias.html">Barbearias</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-estetica-e-massoterapia.html">Estética e Massoterapia</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🏠 Imóveis</strong></li>
-      <li><a href="sao-paulo-itu-apartamento-na-planta.html"><i class="fas fa-building"></i> Apartamentos na Planta</a></li>
+        <article class="category-card" data-category="saúde bem-estar">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-heart-pulse"></i></span> Saúde e Bem-estar</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-academias">Academias</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-centro-de-recreacao-infantil">Centro de Recreação Infantil</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🌞 Energia</strong></li>
-      <li><a href="sao-paulo-itu-energiasolar.html"><i class="fas fa-solar-panel"></i> Energia Solar</a></li>
+        <article class="category-card" data-category="imóveis">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-building"></i></span> Imóveis</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-apartamento-na-planta.html">Apartamentos na Planta</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🚗 Automotivo</strong></li>
-      <li><a href="sao-paulo-itu-agencia-de-veiculos"><i class="fas fa-car"></i> Agência de Veículos</a></li>
-      <li><a href="sao-paulo-itu-mecanica-de-carros.html"><i class="fas fa-cogs"></i> Mecânica de Carros</a></li>
-      <li><a href="sao-paulo-itu-mecanica-de-motos.html"><i class="fas fa-motorcycle"></i> Mecânica de Motos</a></li>
-      <li><a href="sao-paulo-itu-bicicletaria.html"><i class="fas fa-bicycle"></i> Bicicletaria</a></li>
+        <article class="category-card" data-category="energia">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-solar-panel"></i></span> Energia</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-energiasolar.html">Energia Solar</a></li>
+          </ul>
+        </article>
 
-      <li><strong>🍷 Adegas e Tabacarias</strong></li>
-      <li><a href="sao-paulo-itu-adegas-e-tabacarias.html"><i class="fas fa-wine-glass-alt"></i> Adegas e Tabacaria</a></li>
-    </ul>
-  </section>
-</main>
+        <article class="category-card" data-category="automotivo">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-car"></i></span> Automotivo</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-agencia-de-veiculos">Agência de Veículos</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-mecanica-de-carros.html">Mecânica de Carros</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-mecanica-de-motos.html">Mecânica de Motos</a></li>
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-bicicletaria.html">Bicicletaria</a></li>
+          </ul>
+        </article>
 
-<!-- Banner AdSense -->
-  <div style="text-align:center; padding: 20px 0;">
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8142699625381745"
-        data-ad-slot="5670006916"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+        <article class="category-card" data-category="adegas tabacarias">
+          <h3 class="category-title"><span class="category-icon"><i class="fa-solid fa-store"></i></span> Adegas e Tabacarias</h3>
+          <ul class="category-links">
+            <li><a href="https://www.acontecenegocios.com.br/sao-paulo-itu-adegas-e-tabacarias.html">Adegas e Tabacarias</a></li>
+          </ul>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState">Não encontramos categorias com esse termo. Tente outra palavra.</div>
+    </section>
+
+    <div class="ad-wrap" aria-label="Publicidade">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8142699625381745" data-ad-slot="5670006916" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="business-cta" aria-label="Anuncie sua empresa">
+      <div>
+        <h2>Sua empresa merece ser encontrada.</h2>
+        <p>Coloque seu negócio em destaque no Acontece Negócios e facilite o caminho entre clientes e sua empresa.</p>
+      </div>
+      <a class="cta-button" href="https://www.acontecenegocios.com.br/contato.html"><i class="fa-solid fa-bullhorn"></i> Quero anunciar</a>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Acontece Negócios | 
-      <a href="contato.html">Contato</a> | 
-      <a href="politica-privacidade.html">Política de Privacidade</a> | 
-      <a href="termos-uso.html">Termos de Uso</a> | 
-      <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a> | 
-      <a href="portal-de-noticias.html">Portal de Notícias</a>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">Acontece <span>Negócios</span></div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="https://www.acontecenegocios.com.br/contato.html">Contato</a>
+        <a href="https://www.acontecenegocios.com.br/politica-privacidade.html">Política de Privacidade</a>
+        <a href="https://www.acontecenegocios.com.br/termos-uso.html">Termos de Uso</a>
+        <a href="https://www.portalfinanceiro.acontecenegocios.com.br/index.html">Portal Financeiro</a>
+        <a href="https://www.acontecenegocios.com.br/portal-de-noticias.html">Portal de Notícias</a>
+      </nav>
+      <div class="copyright">© <span id="year">2026</span> Acontece Negócios. Todos os direitos reservados.</div>
+    </div>
   </footer>
 
+  <script>
+    const search = document.getElementById('categorySearch');
+    const cards = [...document.querySelectorAll('.category-card')];
+    const count = document.getElementById('visibleCount');
+    const empty = document.getElementById('emptyState');
+    function filterCategories(){
+      const term = search.value.trim().toLocaleLowerCase('pt-BR');
+      let visible = 0;
+      cards.forEach(card => {
+        const matches = card.textContent.toLocaleLowerCase('pt-BR').includes(term) || (card.dataset.category || '').includes(term);
+        card.style.display = matches ? '' : 'none';
+        if(matches) visible++;
+      });
+      count.textContent = visible;
+      empty.style.display = visible ? 'none' : 'block';
+    }
+    search.addEventListener('input', filterCategories);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
